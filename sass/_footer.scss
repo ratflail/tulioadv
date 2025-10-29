@@ -1,0 +1,98 @@
+.footer {
+  border-top: 1px solid #000000;
+  margin-top: 6rem;
+  min-height: 70vh;
+
+  &__box {
+    background-image: url(/img/Crow\ Full.png);
+    min-height: 70vh;
+    background-position: right;
+    background-size: cover;
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__text {
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+  }
+
+  &__para {
+    margin-top: 8rem;
+
+    &-1,
+    &-2 {
+      display: flex;
+      flex-direction: row;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    &-1 {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+.footer__icon {
+  //width: 5rem;
+  //height: 5rem;
+  margin-right: 4rem;
+}
+
+.mail {
+  text-decoration: none;
+  color: var(--color-base);
+}
+
+.whats {
+  justify-self: end;
+
+  &__icon {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+.direitos {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+
+  &__span {
+    color: var(--color-gold);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer {
+    border-top: none;
+  }
+
+  .whats__icon {
+    position: absolute;
+    top: 18rem;
+    right: 3rem;
+  }
+
+  .direitos {
+    margin-top: -2rem;
+  }
+
+  .mail,
+  .tel {
+    color: var(--color-base);
+  }
+
+  .footer__text {
+    color: var(--color-base);
+  }
+
+  .footer__box {
+    min-height: 60vh;
+    background-image: linear-gradient(to right, #423e3e44, transparent),
+      url(/img/Crow\ Full.png);
+  }
+}

@@ -1,0 +1,43 @@
+:root {
+  --color-base: #000000;
+  --color-white: #ffffff;
+  --color-gold: #c8a358;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* Responsive root font scaling */
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  padding: 3rem;
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+}
