@@ -8,6 +8,16 @@ header {
   //border-bottom: 1px solid var(--color-base);
 }
 
+.menu__toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .menu__toggle {
+    display: inline-block;
+  }
+}
+
 .menu {
   //position: fixed;
 
