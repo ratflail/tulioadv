@@ -78,6 +78,7 @@
     &__text {
       font-size: 1.8rem;
       letter-spacing: 0.2rem;
+      margin-top: 2rem;
     }
 
     &__box {
@@ -87,6 +88,10 @@
 
     &__col {
       padding: 2rem;
+
+      &-2 {
+        margin-bottom: 2rem;
+      }
     }
 
     background-position: center;
