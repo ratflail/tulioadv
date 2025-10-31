@@ -195,4 +195,12 @@ header {
   .menu__list {
     display: none;
   }
+
+  .hero {
+    overflow: hidden;
+  }
+
+  .hero__img {
+    transform: scale(1.5);
+  }
 }
