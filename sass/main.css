@@ -32,33 +32,6 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 
-.popup {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 30%;
-  z-index: 99;
-  height: 100vh;
-}
-.popup__item:not(:last-child) {
-  margin-bottom: 5rem;
-}
-.popup__img {
-  width: 5rem;
-  height: 5rem;
-}
-.popup__link {
-  text-decoration: none;
-  color: var(--color-base);
-  font-size: 2rem;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3s;
-}
-.popup__link:hover {
-  border-bottom: 2px solid var(--color-base);
-}
-
 /* Responsive root font scaling */
 @media only screen and (max-width: 1200px) {
   html {
@@ -83,6 +56,53 @@ header {
 
 .menu__toggle {
   display: none;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: var(--color-white);
+  border-left: 1px solid var(--color-base);
+  border-bottom: 1px solid var(--color-base);
+  top: 0;
+  right: 0;
+  width: 40%;
+  z-index: 10;
+  height: 75vh;
+  transform: translateX(100%);
+  pointer-events: none;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+.popup__list {
+  margin-top: 10rem;
+}
+.popup__item {
+  margin-left: 3rem;
+}
+.popup__item:not(:last-child) {
+  margin-bottom: 5rem;
+}
+.popup__img {
+  width: 5rem;
+  height: 5rem;
+}
+.popup__link {
+  text-decoration: none;
+  color: var(--color-base);
+  font-size: 2rem;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+}
+.popup__link:hover {
+  border-bottom: 2px solid var(--color-base);
+}
+
+.popup.visible {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: all;
 }
 
 .menu__list {
@@ -226,11 +246,16 @@ header {
   .menu__toggle {
     display: inline-block;
     border: none;
-    background-color: var(--color-white);
+    border-radius: 50%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur();
+            backdrop-filter: blur();
     font-size: 3rem;
-    position: absolute;
+    position: fixed;
     top: 3rem;
     right: 3rem;
+    z-index: 99;
   }
   .menu__list {
     display: none;
@@ -316,6 +341,7 @@ header {
   }
   .about__col {
     padding: 2rem;
+    text-align: left;
   }
   .about__col-2 {
     margin-bottom: 2rem;
