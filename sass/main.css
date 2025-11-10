@@ -478,7 +478,7 @@ header {
     transform: rotateY(180deg);
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 680px) {
   .areas__text {
     font-size: 2.5rem;
     letter-spacing: 0.5rem;
@@ -488,6 +488,9 @@ header {
   }
   .areas__box {
     width: 100%;
+  }
+  .statement {
+    max-width: 100%;
   }
   .statement__para {
     font-size: 1.5rem;
@@ -573,7 +576,7 @@ header {
     background-image: url(/img/Crow\ Full.png);
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 680px) {
   .footer__box {
     padding: 1rem;
   }
