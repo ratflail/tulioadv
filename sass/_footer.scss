@@ -11,6 +11,7 @@
     padding: 8rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     position: relative;
   }
 
@@ -48,7 +49,7 @@
 }
 
 .whats {
-  justify-self: end;
+  margin-top: 8rem;
 
   &__icon {
     width: 10rem;
@@ -71,11 +72,11 @@
     border-top: none;
   }
 
-  .whats__icon {
-    position: absolute;
-    top: 18rem;
-    right: 3rem;
-  }
+  // .whats__icon {
+  //   position: absolute;
+  //   top: 18rem;
+  //   right: 3rem;
+  // }
 
   .direitos {
     margin-top: -2rem;
@@ -88,12 +89,13 @@
 
   .footer__text {
     color: var(--color-base);
+    margin-top: -13rem;
+    text-align: center;
   }
 
   .footer__box {
     min-height: 60vh;
-    background-image: linear-gradient(to right, #423e3e44, transparent),
-      url(/img/Crow\ Full.png);
+    background-image: url(/img/Crow\ Full.png);
   }
 }
 
@@ -107,33 +109,40 @@
   }
 
   .footer__para {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 10rem;
+    display: none;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // margin-top: 10rem;
 
-    &-1 {
-      font-size: 1.5rem;
-    }
+    // &-1 {
+    //   font-size: 1.5rem;
+    // }
 
-    &-2 {
-      font-size: 1.5rem;
-    }
+    // &-2 {
+    //   font-size: 1.5rem;
+    // }
   }
 
-  .mail,
-  .tel {
-    color: var(--color-white);
-  }
+  // .mail,
+  // .tel {
+  //   color: var(--color-white);
+  // }
 
   .footer__icon {
     display: none;
   }
 
+  .whats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+  }
+
   .whats__icon {
     width: 7rem;
     height: 7rem;
-    top: 19rem;
-    right: 1rem;
+    // top: 19rem;
+    // right: 1rem;
   }
 }
