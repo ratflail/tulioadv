@@ -6,6 +6,8 @@ const about = document.getElementById('about');
 const areas = document.getElementById('areas');
 const footer = document.getElementById('footer');
 const toggle = document.getElementById('menu__toggle');
+const overlay = document.querySelector('.overlay');
+const toggleClass = document.querySelector('.popup');
 
 cards.forEach(card =>
   card.addEventListener('click', function (e) {
@@ -16,7 +18,12 @@ cards.forEach(card =>
 
 toggle.addEventListener('click', function (e) {
   e.preventDefault();
-  const toggleClass = document.querySelector('.popup');
 
   toggleClass.classList.toggle('visible');
+  overlay.classList.toggle('visible');
+});
+
+overlay.addEventListener('click', function () {
+  toggleClass.classList.toggle('visible');
+  overlay.classList.toggle('visible');
 });

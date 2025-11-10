@@ -15,6 +15,7 @@ header {
 .popup {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: fixed;
   background-color: var(--color-white);
   border-left: 1px solid var(--color-base);
@@ -22,8 +23,8 @@ header {
   top: 0;
   right: 0;
   width: 40%;
-  z-index: 10;
-  height: 75vh;
+  z-index: 20;
+  height: 100vh;
   transform: translateX(100%);
   pointer-events: none;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -61,6 +62,24 @@ header {
 
 .popup.visible {
   transform: translateX(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* OVERLAY */
+
+.overlay {
+  position: fixed;
+  inset: 0; /* shorthand for top, right, bottom, left = 0 */
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 10; /* below the popup */
+}
+
+/* When menu is open */
+.overlay.visible {
   opacity: 1;
   pointer-events: all;
 }
