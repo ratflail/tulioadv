@@ -16,6 +16,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   position: fixed;
   background-color: var(--color-white);
   border-left: 1px solid var(--color-base);
