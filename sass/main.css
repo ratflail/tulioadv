@@ -185,9 +185,11 @@ header {
   border-radius: 1.5rem;
   border: none;
   transition: all 0.2s;
+  transform: translateZ(0);
+  will-change: transform;
 }
 .presents__btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   cursor: pointer;
 }
 
@@ -407,7 +409,7 @@ header {
 }
 .areas__card-par {
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
   border-bottom: 1px solid #ffffff;
 }
 .areas__card-front, .areas__card-back {

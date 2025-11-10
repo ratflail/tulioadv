@@ -159,9 +159,12 @@ header {
     border-radius: 1.5rem;
     border: none;
     transition: all 0.2s;
+    //backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
       cursor: pointer;
     }
   }
