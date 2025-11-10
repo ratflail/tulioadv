@@ -284,12 +284,15 @@ header {
   .hero__img {
     transform: scale(2);
   }
+  .presents {
+    width: 80%;
+  }
   .presents__btn {
     margin-top: 2rem;
   }
 }
 .about {
-  margin-top: 2rem;
+  margin-top: 6rem;
   background-image: linear-gradient(to right bottom, var(--color-base), transparent), linear-gradient(to right bottom, var(--color-base), transparent), url(/img/office.png);
   background-size: cover;
   min-height: 100vh;

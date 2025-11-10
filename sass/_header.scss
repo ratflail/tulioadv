@@ -86,8 +86,6 @@ header {
 }
 
 .menu {
-  //position: relative;
-
   &__list {
     display: flex;
     flex-direction: row;
@@ -284,6 +282,10 @@ header {
 
   .hero__img {
     transform: scale(2);
+  }
+
+  .presents {
+    width: 80%;
   }
 
   .presents__btn {
