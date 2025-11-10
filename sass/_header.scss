@@ -30,9 +30,9 @@ header {
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   opacity: 0;
 
-  &__list {
-    margin-top: 10rem;
-  }
+  // &__list {
+  //   margin-top: 10rem;
+  // }
 
   &__item {
     margin-left: 3rem;
@@ -175,6 +175,7 @@ header {
 }
 
 /* Responsive header/menu/hero adjustments */
+
 @media only screen and (max-width: 1024px) {
   header {
     height: auto;
@@ -281,6 +282,10 @@ header {
   }
 
   .hero__img {
-    transform: scale(1.5);
+    transform: scale(2);
+  }
+
+  .presents__btn {
+    margin-top: 2rem;
   }
 }
