@@ -167,6 +167,7 @@ header {
   align-items: center;
   font-size: 2rem;
   font-weight: 400;
+  alignment-baseline: baseline;
 }
 .presents__text {
   margin-right: 5rem;
@@ -179,7 +180,7 @@ header {
 .presents__btn {
   background-color: var(--color-base);
   color: var(--color-white);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 1.5rem;
   border: none;
   transition: all 0.2s;
@@ -187,8 +188,11 @@ header {
   will-change: transform;
 }
 .presents__btn:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
   cursor: pointer;
+}
+.presents__btn:active {
+  transform: translateY(0);
 }
 
 .span__text {
@@ -258,7 +262,7 @@ header {
   }
   .presents__btn {
     padding: 1rem 1.2rem;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
 @media only screen and (max-width: 600px) {
