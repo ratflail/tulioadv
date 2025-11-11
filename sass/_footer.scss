@@ -67,9 +67,9 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .footer {
-    border-top: none;
-  }
+  // .footer {
+  //   border-top: none;
+  // }
 
   // .whats__icon {
   //   position: absolute;
@@ -96,6 +96,7 @@
   .footer__box {
     min-height: 70vh;
     background-image: url(/img/Crow\ Full.png);
+    margin-top: 4rem;
   }
 }
 
@@ -110,23 +111,7 @@
 
   .footer__para {
     display: none;
-    // flex-direction: column;
-    // align-items: flex-start;
-    // margin-top: 10rem;
-
-    // &-1 {
-    //   font-size: 1.5rem;
-    // }
-
-    // &-2 {
-    //   font-size: 1.5rem;
-    // }
   }
-
-  // .mail,
-  // .tel {
-  //   color: var(--color-white);
-  // }
 
   .footer__icon {
     display: none;

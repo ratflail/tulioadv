@@ -517,6 +517,9 @@ header {
   }
 }
 @media only screen and (max-width: 680px) {
+  .areas {
+    margin-top: 10rem;
+  }
   .areas__text {
     font-size: 2.5rem;
     letter-spacing: 0.5rem;
@@ -601,9 +604,6 @@ header {
 }
 
 @media only screen and (max-width: 1200px) {
-  .footer {
-    border-top: none;
-  }
   .direitos {
     margin-top: -2rem;
   }
@@ -619,6 +619,7 @@ header {
   .footer__box {
     min-height: 70vh;
     background-image: url(/img/Crow\ Full.png);
+    margin-top: 4rem;
   }
 }
 @media only screen and (max-width: 680px) {
