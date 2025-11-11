@@ -257,6 +257,11 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+    justify-content: center;
+  }
+
   .menu__toggle {
     display: inline-block;
     border: none;
