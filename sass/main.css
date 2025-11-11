@@ -300,6 +300,8 @@ header {
   margin-top: 6rem;
   background-image: linear-gradient(to right bottom, var(--color-base), transparent), linear-gradient(to right bottom, var(--color-base), transparent), url(/img/office.png);
   background-size: cover;
+  border-radius: 1rem;
+  box-shadow: 0 4px 4px #000000;
   min-height: 100vh;
   width: 100%;
   font-size: 2rem;
@@ -353,7 +355,7 @@ header {
 }
 @media only screen and (max-width: 767px) {
   .about {
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-size: 1.6rem;
     min-height: auto;
     padding: 0 1rem;
@@ -525,6 +527,9 @@ header {
   .areas__card-parag {
     font-size: 1.8rem;
     line-height: 1.7;
+  }
+  .areas__card-par {
+    font-size: 1.8rem;
   }
   .areas__box {
     width: 100%;
