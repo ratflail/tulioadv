@@ -353,6 +353,7 @@ header {
 }
 @media only screen and (max-width: 767px) {
   .about {
+    margin-top: 3rem;
     font-size: 1.6rem;
     min-height: auto;
     padding: 0 1rem;
@@ -407,7 +408,7 @@ header {
   transform: rotateY(180deg);
 }
 .areas__card-text {
-  padding: 3rem;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -415,6 +416,10 @@ header {
 .areas__card-btn {
   margin-top: 5rem;
   align-self: flex-end;
+}
+.areas__card-parag {
+  font-size: 2rem;
+  line-height: 1.5;
 }
 .areas__card-par {
   font-size: 2rem;
@@ -516,6 +521,10 @@ header {
     border-bottom: 1px solid var(--color-base);
     text-align: center;
     padding-bottom: 1rem;
+  }
+  .areas__card-parag {
+    font-size: 1.8rem;
+    line-height: 1.7;
   }
   .areas__box {
     width: 100%;
