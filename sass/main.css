@@ -246,6 +246,7 @@ header {
   }
   .presents {
     font-size: 1.4rem;
+    margin-top: 10rem;
   }
   .presents__text {
     margin-right: 0;
@@ -286,7 +287,7 @@ header {
     overflow: hidden;
   }
   .hero__img {
-    transform: scale(2);
+    transform: scale(3);
   }
   .presents {
     width: 80%;
