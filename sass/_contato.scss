@@ -105,6 +105,15 @@
     }
   }
 
+  // Fix for select dropdown options
+  select.contact__input {
+    option {
+      background-color: #2d2d2d;
+      color: #fff;
+      padding: 1rem;
+    }
+  }
+
   &__textarea {
     resize: vertical;
     min-height: 15rem;

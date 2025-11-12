@@ -9,7 +9,7 @@
   &__box {
     min-height: 70vh;
     padding: 5rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -43,17 +43,26 @@
 //   margin-right: 4rem;
 // }
 
-.mail {
-  text-decoration: none;
-  color: var(--color-base);
-}
+// .mail {
+//   text-decoration: none;
+//   color: var(--color-base);
+// }
 
 .whats {
   margin-top: 8rem;
 
   &__icon {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+.insta {
+  margin-top: 8rem;
+
+  &__icon {
+    width: 8rem;
+    height: 8rem;
   }
 }
 

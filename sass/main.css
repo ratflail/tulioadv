@@ -647,6 +647,11 @@ header {
 .contact__input:hover, .contact__textarea:hover {
   border-color: rgba(201, 169, 97, 0.5);
 }
+.contact select.contact__input option {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 1rem;
+}
 .contact__textarea {
   resize: vertical;
   min-height: 15rem;
@@ -754,7 +759,7 @@ header {
 .footer__box {
   min-height: 70vh;
   padding: 5rem;
-  margin-top: 5rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -764,17 +769,20 @@ header {
   letter-spacing: 1.5rem;
 }
 
-.mail {
-  text-decoration: none;
-  color: var(--color-base);
-}
-
 .whats {
   margin-top: 8rem;
 }
 .whats__icon {
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
+}
+
+.insta {
+  margin-top: 8rem;
+}
+.insta__icon {
+  width: 8rem;
+  height: 8rem;
 }
 
 .direitos {
