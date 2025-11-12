@@ -1,6 +1,6 @@
 .footer {
-  border-top: 1px solid #000000;
-  margin-top: 6rem;
+  //border-top: 1px solid #000000;
+  // margin-top: 1rem;
   min-height: 70vh;
   background-image: url(/img/Crow\ Full.png);
   background-position: right;
@@ -20,28 +20,28 @@
     letter-spacing: 1.5rem;
   }
 
-  &__para {
-    margin-top: 8rem;
+  // &__para {
+  //   margin-top: 8rem;
 
-    &-1,
-    &-2 {
-      display: flex;
-      flex-direction: row;
-      font-size: 2rem;
-      text-align: center;
-    }
+  //   &-1,
+  //   &-2 {
+  //     display: flex;
+  //     flex-direction: row;
+  //     font-size: 2rem;
+  //     text-align: center;
+  //   }
 
-    &-1 {
-      margin-bottom: 4rem;
-    }
-  }
+  //   &-1 {
+  //     margin-bottom: 4rem;
+  //   }
+  // }
 }
 
-.footer__icon {
-  //width: 5rem;
-  //height: 5rem;
-  margin-right: 4rem;
-}
+// .footer__icon {
+//   //width: 5rem;
+//   //height: 5rem;
+//   margin-right: 4rem;
+// }
 
 .mail {
   text-decoration: none;

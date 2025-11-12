@@ -226,10 +226,96 @@
       </div>
     </section>
 
+    <section id="contato" class="contact">
+      <div class="contact__container">
+        <div class="contact__header">
+          <h2 class="contact__title">FALE CONOSCO</h2>
+          <p class="contact__subtitle">
+            Preencha o formulário abaixo ou entre em contato pelos nossos
+            canais. Retornaremos em breve.
+          </p>
+        </div>
+
+        <form
+          class="contact__form"
+          id="contactForm"
+          action="https://formspree.io/f/xjkjkkow"
+          method="POST"
+        >
+          <div class="contact__grid">
+            <div class="contact__form-group">
+              <label for="name" class="contact__label">Nome Completo *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="contact__input"
+                placeholder="Seu nome"
+                required
+              />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__label">E-mail *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="contact__input"
+                placeholder="seu@email.com"
+                required
+              />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="phone" class="contact__label">Telefone *</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="contact__input"
+                placeholder="(21) 00000-0000"
+                required
+              />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="subject" class="contact__label"
+                >Área de Interesse</label
+              >
+              <select id="subject" name="subject" class="contact__input">
+                <option value="">Selecione uma área</option>
+                <option value="consumidor">Direito do Consumidor</option>
+                <option value="empresarial">Direito Empresarial</option>
+                <option value="inventario">Inventários e Sucessões</option>
+                <option value="outro">Outro assunto</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="contact__form-group contact__form-group--full">
+            <label for="message" class="contact__label">Mensagem *</label>
+            <textarea
+              id="message"
+              name="message"
+              class="contact__textarea"
+              rows="6"
+              placeholder="Descreva brevemente sua situação..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="contact__btn">ENVIAR MENSAGEM</button>
+
+          <div class="contact__feedback" id="formFeedback"></div>
+        </form>
+      </div>
+    </section>
+
     <section id="footer" class="footer">
       <div class="footer__box">
         <div class="footer__text">CONTATO</div>
-        <div class="footer__para">
+        <!-- <div class="footer__para">
           <div class="footer__para-1">
             <img src="img/Icon_tel.png" alt="telefone" class="footer__icon" />
             <p class="tel">21 - 979671267</p>
@@ -242,7 +328,7 @@
               </a>
             </p>
           </div>
-        </div>
+        </div> -->
         <div class="whats">
           <a
             href="https://wa.me/5521979671267?text=Ola%2C%20gostaria%20de%20falar%20com%20a%20empresa%20sobre%20os%20servicos."

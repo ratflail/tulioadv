@@ -62,6 +62,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
   &__img {
     max-height: 75vh;
