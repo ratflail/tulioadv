@@ -134,6 +134,7 @@ header {
 }
 .presents__btn:hover {
   transform: translateY(-5px);
+  box-shadow: 2px 4px 10px var(--color-gold);
   cursor: pointer;
 }
 .presents__btn:active {
@@ -561,6 +562,8 @@ header {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   padding: 8rem 2rem;
   position: relative;
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 .contact::before {
   content: "";
@@ -759,7 +762,7 @@ header {
 .footer__box {
   min-height: 70vh;
   padding: 5rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -773,16 +776,22 @@ header {
   margin-top: 8rem;
 }
 .whats__icon {
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
 }
 
 .insta {
   margin-top: 8rem;
 }
 .insta__icon {
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
 }
 
 .direitos {
@@ -818,24 +827,27 @@ header {
   }
   .footer__box {
     padding: 1rem;
+    margin-top: 4rem;
+    flex-direction: column;
+    justify-content: start;
   }
   .footer__text {
     color: var(--color-base);
   }
-  .footer__para {
-    display: none;
+  .socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: end;
   }
-  .footer__icon {
-    display: none;
+  .insta {
+    margin-top: 2rem;
   }
   .whats {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
     margin-top: 4rem;
   }
   .whats__icon {
-    width: 10rem;
-    height: 10rem;
+    width: 7rem;
+    height: 7rem;
   }
 }/*# sourceMappingURL=main.css.map */

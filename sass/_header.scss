@@ -103,6 +103,7 @@ header {
 
     &:hover {
       transform: translateY(-5px);
+      box-shadow: 2px 4px 10px var(--color-gold);
       cursor: pointer;
     }
 

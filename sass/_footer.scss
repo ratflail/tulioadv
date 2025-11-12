@@ -1,6 +1,4 @@
 .footer {
-  //border-top: 1px solid #000000;
-  // margin-top: 1rem;
   min-height: 70vh;
   background-image: url(/img/Crow\ Full.png);
   background-position: right;
@@ -9,7 +7,7 @@
   &__box {
     min-height: 70vh;
     padding: 5rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -19,41 +17,14 @@
     font-size: 2rem;
     letter-spacing: 1.5rem;
   }
-
-  // &__para {
-  //   margin-top: 8rem;
-
-  //   &-1,
-  //   &-2 {
-  //     display: flex;
-  //     flex-direction: row;
-  //     font-size: 2rem;
-  //     text-align: center;
-  //   }
-
-  //   &-1 {
-  //     margin-bottom: 4rem;
-  //   }
-  // }
 }
-
-// .footer__icon {
-//   //width: 5rem;
-//   //height: 5rem;
-//   margin-right: 4rem;
-// }
-
-// .mail {
-//   text-decoration: none;
-//   color: var(--color-base);
-// }
 
 .whats {
   margin-top: 8rem;
 
   &__icon {
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
   }
 }
 
@@ -61,9 +32,15 @@
   margin-top: 8rem;
 
   &__icon {
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
   }
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
 }
 
 .direitos {
@@ -118,6 +95,9 @@
 
   .footer__box {
     padding: 1rem;
+    margin-top: 4rem;
+    flex-direction: column;
+    justify-content: start;
     //margin-top: 0;
   }
 
@@ -125,24 +105,24 @@
     color: var(--color-base);
   }
 
-  .footer__para {
-    display: none;
+  .socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: end;
   }
 
-  .footer__icon {
-    display: none;
+  .insta {
+    margin-top: 2rem;
   }
 
   .whats {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
     margin-top: 4rem;
   }
 
   .whats__icon {
-    width: 10rem;
-    height: 10rem;
+    width: 7rem;
+    height: 7rem;
     // top: 19rem;
     // right: 1rem;
   }
