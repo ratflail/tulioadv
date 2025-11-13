@@ -253,6 +253,9 @@ header {
   header {
     padding: 2rem 1rem;
   }
+  .popup {
+    width: 43%;
+  }
   .popup__item {
     font-size: 1.7rem;
   }
