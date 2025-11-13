@@ -244,6 +244,12 @@ header {
     padding: 2rem 1rem;
   }
 
+  .popup {
+    &__item {
+      font-size: 1.7rem;
+    }
+  }
+
   .menu__toggle {
     display: inline-block;
     border: none;
