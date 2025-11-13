@@ -117,6 +117,22 @@ header {
   color: var(--color-gold);
 }
 
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
 /* POPUP */
 
 .popup.visible {

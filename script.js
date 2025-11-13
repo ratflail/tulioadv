@@ -28,6 +28,61 @@ overlay.addEventListener('click', function () {
   overlay.classList.toggle('visible');
 });
 
+// Typewriter effect for hero text
+document.addEventListener('DOMContentLoaded', function () {
+  const text = document.querySelector('.presents__text');
+
+  if (text) {
+    // Get the original HTML content
+    const originalHTML = text.innerHTML;
+
+    // Clear the text
+    text.innerHTML = '';
+    text.style.opacity = '1'; // Make sure it's visible
+
+    let charIndex = 0;
+    let tempDiv = document.createElement('div');
+    tempDiv.innerHTML = originalHTML;
+    const textContent = tempDiv.textContent || tempDiv.innerText;
+
+    function typeWriter() {
+      if (charIndex < textContent.length) {
+        // Build the HTML progressively
+        let currentHTML = '';
+        let textCharCount = 0;
+
+        // Parse through original HTML and add characters
+        for (let i = 0; i < originalHTML.length; i++) {
+          if (originalHTML[i] === '<') {
+            // Find the end of the tag
+            let tagEnd = originalHTML.indexOf('>', i);
+            currentHTML += originalHTML.substring(i, tagEnd + 1);
+            i = tagEnd;
+          } else {
+            if (textCharCount < charIndex) {
+              currentHTML += originalHTML[i];
+              if (originalHTML[i] !== ' ' && originalHTML[i] !== '\n') {
+                textCharCount++;
+              }
+            } else {
+              break;
+            }
+          }
+        }
+
+        text.innerHTML = currentHTML + '<span class="cursor">|</span>';
+        charIndex++;
+        setTimeout(typeWriter, 50); // Adjust speed here (lower = faster)
+      } else {
+        // Remove cursor when done
+        text.innerHTML = originalHTML;
+      }
+    }
+
+    typeWriter();
+  }
+});
+
 // Contact Form Handler
 document.addEventListener('DOMContentLoaded', function () {
   const contactForm = document.getElementById('contactForm');
