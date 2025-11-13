@@ -156,11 +156,10 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   position: fixed;
   background-color: var(--color-white);
   border-left: 1px solid var(--color-base);
-  border-bottom: 1px solid var(--color-base);
+  box-shadow: 8px 0 10px var(--color-base);
   top: 0;
   right: 0;
   width: 40%;
@@ -171,8 +170,13 @@ header {
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   opacity: 0;
 }
+.popup__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .popup__item {
-  margin-left: 3rem;
+  text-align: center;
 }
 .popup__item:not(:last-child) {
   margin-bottom: 5rem;
@@ -235,6 +239,23 @@ header {
 @media only screen and (max-width: 767px) {
   header {
     padding: 2rem 1rem;
+  }
+  .menu__toggle {
+    display: inline-block;
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur();
+            backdrop-filter: blur();
+    font-size: 3rem;
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    z-index: 99;
+  }
+  .menu__list {
+    display: none;
   }
   .menu__list {
     flex-direction: column;
@@ -415,6 +436,12 @@ header {
   perspective: 150rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: all 0.6s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+  touch-action: manipulation;
 }
 .areas__card:hover {
   cursor: pointer;
@@ -564,6 +591,7 @@ header {
   position: relative;
   box-shadow: 0 22px 40px rgba(0, 0, 0, 0.5);
   z-index: 2;
+  border-radius: 1rem;
 }
 .contact::before {
   content: "";

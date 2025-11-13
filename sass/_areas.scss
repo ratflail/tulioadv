@@ -28,6 +28,13 @@
     box-shadow: 0 1.5rem 4rem rgba(#000000, 0.15);
     transition: all 0.6s;
 
+    // Disable mobile tap highlight
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+
     &:hover {
       cursor: pointer;
     }
