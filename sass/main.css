@@ -171,14 +171,16 @@ header {
   box-shadow: 0 0 0 0 rgb(255, 255, 255);
   animation: borderPulse 1.5s ease-in-out infinite;
 }
-.presents__btn:hover {
-  transform: translateY(-5px);
-  box-shadow: 2px 4px 10px var(--color-base);
-  cursor: pointer;
-  animation: none;
-}
-.presents__btn:active {
-  transform: translateY(0);
+@media only screen and (min-width: 1025px) {
+  .presents__btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 4px 10px var(--color-base);
+    cursor: pointer;
+    animation: none;
+  }
+  .presents__btn:active {
+    transform: translateY(0);
+  }
 }
 
 @keyframes borderPulse {
@@ -360,6 +362,7 @@ header {
   .presents__btn {
     padding: 2rem;
     font-size: 2.2rem;
+    animation: none;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -395,6 +398,7 @@ header {
   }
   .presents__btn {
     margin-top: 2rem;
+    animation: none;
   }
 }
 .about {

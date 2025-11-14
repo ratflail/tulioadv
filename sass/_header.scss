@@ -106,15 +106,17 @@ header {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
     animation: borderPulse 1.5s ease-in-out infinite;
 
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 2px 4px 10px var(--color-base);
-      cursor: pointer;
-      animation: none; // Stop pulsating on hover
-    }
+    @media only screen and (min-width: 1025px) {
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 2px 4px 10px var(--color-base);
+        cursor: pointer;
+        animation: none; // Stop pulsating on hover
+      }
 
-    &:active {
-      transform: translateY(0);
+      &:active {
+        transform: translateY(0);
+      }
     }
   }
 }
@@ -330,6 +332,7 @@ header {
     &__btn {
       padding: 2rem;
       font-size: 2.2rem;
+      animation: none;
     }
   }
 }
@@ -373,5 +376,6 @@ header {
 
   .presents__btn {
     margin-top: 2rem;
+    animation: none;
   }
 }
