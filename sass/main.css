@@ -69,9 +69,6 @@ header {
   height: auto;
   transition: all 0.2s;
 }
-.menu__img:hover {
-  transform: scale(1.2);
-}
 .menu__item {
   display: inline-block;
   font-size: 2rem;
@@ -202,6 +199,10 @@ header {
   text-decoration: none;
   color: var(--color-base);
   font-size: 2rem;
+}
+
+.popup-contato {
+  font-weight: 800;
 }
 
 /* OVERLAY */

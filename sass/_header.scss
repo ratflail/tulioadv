@@ -26,9 +26,9 @@ header {
     height: auto;
     transition: all 0.2s;
 
-    &:hover {
-      transform: scale(1.2);
-    }
+    // &:hover {
+    //   transform: scale(1.2);
+    // }
   }
 
   &__item {
@@ -182,6 +182,10 @@ header {
     color: var(--color-base);
     font-size: 2rem;
   }
+}
+
+.popup-contato {
+  font-weight: 800;
 }
 
 /* OVERLAY */
