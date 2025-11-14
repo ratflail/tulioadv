@@ -8,8 +8,6 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  margin: 0;
-  padding: 0;
   scroll-behavior: smooth;
 }
 
@@ -29,7 +27,48 @@ ol {
 body {
   padding: 3rem;
   color: black;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
   font-family: "Roboto Mono", monospace;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
 /* Responsive root font scaling */

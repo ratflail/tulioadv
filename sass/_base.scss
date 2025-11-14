@@ -7,8 +7,6 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  margin: 0;
-  padding: 0;
   scroll-behavior: smooth;
 }
 
@@ -28,8 +26,61 @@ ol {
 body {
   padding: 3rem;
   color: black;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
   font-family: 'Roboto Mono', monospace;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty; // Better line breaks for readability
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance; // Balances heading lines
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block; // Removes inline spacing issues
+  max-width: 100%; // Responsive by default
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+// // Respect user motion preferences
+// @media (prefers-reduced-motion: reduce) {
+//   *,
+//   *::before,
+//   *::after {
+//     animation-duration: 0.01ms !important;
+//     animation-iteration-count: 1 !important;
+//     transition-duration: 0.01ms !important;
+//     scroll-behavior: auto !important;
+//   }
+// }
 
 /* Responsive root font scaling */
 @media only screen and (max-width: 1200px) {
