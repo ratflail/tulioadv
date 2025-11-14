@@ -167,16 +167,28 @@ header {
   transition: all 0.2s;
   transform: translateZ(0);
   will-change: transform;
+  position: relative;
+  box-shadow: 0 0 0 0 rgb(255, 255, 255);
+  animation: borderPulse 1.5s ease-in-out infinite;
 }
 .presents__btn:hover {
   transform: translateY(-5px);
-  box-shadow: 2px 4px 10px var(--color-gold);
+  box-shadow: 2px 4px 10px var(--color-base);
   cursor: pointer;
+  animation: none;
 }
 .presents__btn:active {
   transform: translateY(0);
 }
 
+@keyframes borderPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+  }
+  50% {
+    box-shadow: 0 0 10px 12px rgba(255, 255, 255, 0.6);
+  }
+}
 .span__text {
   color: var(--color-gold);
 }
