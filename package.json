@@ -1,0 +1,29 @@
+{
+  "name": "tulio_adv",
+  "version": "1.0.0",
+  "description": "ADV Site Package",
+  "main": "script.js",
+  "scripts": {
+    "prefix-css": "postcss --use autoprefixer -b 'last 5 versions' sass/main.css -o sass/main.prefix.css",
+    "minify-css": "npx cleancss -o sass/main.min.css sass/main.prefix.css",
+    "build-css": "npm-run-all prefix-css minify-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ratflail/tulioadv.git"
+  },
+  "keywords": [
+    "adv"
+  ],
+  "author": "Tulio Dias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ratflail/tulioadv/issues"
+  },
+  "homepage": "https://github.com/ratflail/tulioadv#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.22",
+    "clean-css-cli": "^5.6.3",
+    "postcss-cli": "^11.0.1"
+  }
+}
