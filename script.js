@@ -28,13 +28,18 @@ overlay.addEventListener('click', function () {
   overlay.classList.toggle('visible');
 });
 
-// Typewriter effect for hero text
+// Typewriter effect for hero text - FIXED VERSION
 document.addEventListener('DOMContentLoaded', function () {
   const text = document.querySelector('.presents__text');
 
   if (text) {
     // Get the original HTML content
     const originalHTML = text.innerHTML;
+
+    // CRITICAL FIX: Calculate and set width BEFORE clearing text
+    const fullWidth = text.offsetWidth;
+    text.style.minWidth = fullWidth + 'px';
+    text.style.display = 'inline-block';
 
     // Clear the text
     text.innerHTML = '';
