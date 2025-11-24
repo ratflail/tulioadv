@@ -4,8 +4,8 @@
   "description": "ADV Site Package",
   "main": "script.js",
   "scripts": {
-    "prefix-css": "postcss --use autoprefixer -b 'last 5 versions' sass/main.css -o sass/main.prefix.css",
-    "minify-css": "npx cleancss -o sass/main.min.css sass/main.prefix.css",
+    "prefix-css": "postcss --use autoprefixer -b 'last 5 versions' sass/main.css -o css/main.prefix.css",
+    "minify-css": "npx cleancss -o css/main.min.css css/main.prefix.css",
     "build-css": "npm-run-all prefix-css minify-css"
   },
   "repository": {
@@ -24,6 +24,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.22",
     "clean-css-cli": "^5.6.3",
+    "npm-run-all": "^4.1.5",
     "postcss-cli": "^11.0.1"
   }
 }
