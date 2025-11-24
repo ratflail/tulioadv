@@ -5,14 +5,14 @@ deployment:
     - export REPOPATH=/home2/tulioad6/repositories/tulioadv
     - cd $REPOPATH
     - /usr/bin/rsync -av --delete \
-        --exclude='sass/' \
-        --exclude='scss/' \
-        --exclude='node_modules/' \
-        --exclude='package.json' \
-        --exclude='package-lock.json' \
-        --exclude='.git/' \
-        --exclude='.gitignore' \
-        --exclude='.cpanel.yml' \
-        --exclude='README.md' \
-        --exclude='.DS_Store' \
-        * $DEPLOYPATH
+      --exclude='sass/' \
+      --exclude='scss/' \
+      --exclude='node_modules/' \
+      --exclude='package.json' \
+      --exclude='package-lock.json' \
+      --exclude='.git/' \
+      --exclude='.gitignore' \
+      --exclude='.cpanel.yml' \
+      --exclude='README.md' \
+      --exclude='.DS_Store' \
+      * $DEPLOYPATH
